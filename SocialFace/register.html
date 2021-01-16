@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Register | Social Face</title>
   </head>
   <body>
      <!--Title-->
@@ -26,19 +26,34 @@
             <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Sign In</h5>
+                        <h5 class="card-title text-center">Register</h5>
                         <form action="#">
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="firstname">Firstname:</label>
+                                <input type="text" id="firstname" name= "firstname" class= "form-control" placeholder="Enter firstname" required autofocus>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastname">Lastname:</label>
+                                <input type="text" id="lastname" name = "lastname" placeholder="Enter lastname" class= "form-control" required autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
                                 <input type="Email"id="email" name="email" class="form-control" placeholder="Enter email address" required autofocus>
                                 
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Password:</label>
                                 <input type="password" id="pass"class= "form-control"placeholder="Enter password" required autofocus>
                                 
                             </div>
-                            <button class="btn btn-primary w-100 mt-3" type="submit">Sign in</button>
+                            <div class="form-group">
+                                <label for="password">Repeat Password:</label>
+                                <input type="password" id="pass"class= "form-control"placeholder="Enter password again" required autofocus>
+                                
+                            </div>
+                            
+                            <input type="submit" value="Register" class=" w-100 btn btn-primary mt-2 mb-2">
 
                         </form>
                     </div>
